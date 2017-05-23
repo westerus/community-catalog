@@ -10,3 +10,11 @@ netdata:
     - /proc:/host/proc:ro
     - /sys:/host/sys:ro
     - /var/run/docker.sock:/var/run/docker.sock:ro
+  environment:
+    SSMTP_TO: ${SSMTP_TO}
+    SSMTP_SERVER: ${SSMTP_SERVER}
+    SSMTP_PORT: ${SSMTP_PORT}
+    SSMTP_USER: ${SSMTP_USER}
+    SSMTP_PASS: ${SSMTP_PASS}
+    SSMTP_TLS: ${SSMTP_TLS}
+    SSMTP_HOSTNAME: ${SSMTP_HOSTNAME}

@@ -14,7 +14,6 @@
       description: "This is the address alarms will be delivered to"
       label: "SSMTP TO"
       required: false
-      default: "user@gmail.com"
       type: "string"
     - variable: SSMTP_SERVER
       description: "This is your SMTP server"
@@ -32,13 +31,11 @@
       description: "This is your username for the SMTP server"
       label: "SSMTP USER"
       required: false
-      default: "user"
       type: "string"
     - variable: SSMTP_PASS
       description: "This is your password for the SMTP server"
       label: "SSMTP PASS"
       required: false
-      default: "password_gmail"
       type: "string"
     - variable: SSMTP_TLS
       description: "Use TLS for the connection"
