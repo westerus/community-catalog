@@ -52,7 +52,6 @@
 
 netdata:
   health_check:
-    request_line: GET /ping HTTP/1.0
     port: ${NETDATA_PORT}
     interval: 15000
     response_timeout: 10000
