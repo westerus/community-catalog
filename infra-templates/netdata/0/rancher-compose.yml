@@ -1,14 +1,56 @@
 .catalog:
   name: "Netdata"
-  version: 1.0.0-latest-rancher1
+  version: 1.6.0
   description: "Netdata is a system for distributed real-time performance and health monitoring"
-  minimum_rancher_version: v1.0.0-rc2
+  minimum_rancher_version: v1.5.0
   questions:
     - variable: NETDATA_PORT
       description: "Port to access Netdata"
       label: "Netdata Port"
       required: true
       default: "19999"
+      type: "string"
+    - variable: SSMTP_TO
+      description: "This is the address alarms will be delivered to"
+      label: "SSMTP TO"
+      required: false
+      default: "user@gmail.com"
+      type: "string"
+    - variable: SSMTP_SERVER
+      description: "This is your SMTP server"
+      label: "SSMTP SERVER"
+      required: false
+      default: "smtp.gmail.com"
+      type: "string"
+    - variable: SSMTP_PORT
+      description: "This is the SMTP server port"
+      label: "SSMTP PORT"
+      required: false
+      default: "587"
+      type: "string"
+    - variable: SSMTP_USER
+      description: "This is your username for the SMTP server"
+      label: "SSMTP USER"
+      required: false
+      default: "user"
+      type: "string"
+    - variable: SSMTP_PASS
+      description: "This is your password for the SMTP server"
+      label: "SSMTP PASS"
+      required: false
+      default: "password_gmail"
+      type: "string"
+    - variable: SSMTP_TLS
+      description: "Use TLS for the connection"
+      label: "SSMTP TLS"
+      required: false
+      default: "YES"
+      type: "string"
+    - variable: SSMTP_HOSTNAME
+      description: "The hostname mail will come from"
+      label: "SSMTP HOSTNAME"
+      required: false
+      default: "localhost"
       type: "string"
 
 netdata:

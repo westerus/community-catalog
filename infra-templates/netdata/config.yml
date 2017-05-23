@@ -1,7 +1,7 @@
 name: Netdata
 description: |
   Netdata is a system for distributed real-time performance and health monitoring
-version: 1.0.0-latest-rancher1
+version: 1.6.0
 maintainer: Westerus <westerus@gmail.com>
 category: Monitoring
 labels:
