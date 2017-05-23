@@ -1,0 +1,8 @@
+name: Netdata
+description: |
+  Netdata is a system for distributed real-time performance and health monitoring
+version: 1.0.0-latest-rancher1
+maintainer: Westerus <westerus@gmail.com>
+category: Monitoring
+labels:
+  io.rancher.orchestration.supported: 'cattle,mesos,swarm,kubernetes'

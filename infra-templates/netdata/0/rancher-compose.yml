@@ -1,0 +1,22 @@
+.catalog:
+  name: "Netdata"
+  version: 1.0.0-latest-rancher1
+  description: "Netdata is a system for distributed real-time performance and health monitoring"
+  minimum_rancher_version: v1.0.0-rc2
+  questions:
+    - variable: NETDATA_PORT
+      description: "Port to access Netdata"
+      label: "Netdata Port"
+      required: true
+      default: "19999"
+      type: "string"
+
+netdata:
+  health_check:
+    request_line: GET /ping HTTP/1.0
+    port: ${NETDATA_PORT}
+    interval: 15000
+    response_timeout: 10000
+    healthy_threshold: 1
+    unhealthy_threshold: 2
+    strategy: recreate
