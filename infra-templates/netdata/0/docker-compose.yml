@@ -1,4 +1,4 @@
-netdata:
+Netdata:
   labels:
     io.rancher.scheduler.global: 'true'
   image: titpetric/netdata
